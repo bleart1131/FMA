@@ -1,0 +1,19 @@
+body{
+    background-image: url(./photos/wood.background.jpg);
+}
+h1{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 17%, rgba(0,212,255,1) 100%);
+color: pink;
+}
+li{
+    color: pink;
+    background-color: black;
+    opacity: 0.6;
+}
+p{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 17%, rgba(0,212,255,1) 100%);
+    color: pink;
+
+}
