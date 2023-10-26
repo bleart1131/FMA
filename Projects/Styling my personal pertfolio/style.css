@@ -1,0 +1,64 @@
+body {
+    background-image: url(./images/background.jpg);
+    cursor: url(./images/rocket-svgrepo-com.svg) 25 0, auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#title {
+    text-align: center;
+
+
+}
+
+#lista1 {
+    text-align: center;
+    list-style-type: none;
+    padding: 0px;
+    
+}
+
+#lista1 li{
+    display: inline;
+    background-color: aqua;
+    border-radius: 30px;
+}
+#lista1 li:hover{
+    background-color: rgb(85, 161, 161);
+}
+
+h2 {
+    text-align: center;
+}
+
+#bleartramadani {
+    text-align: center;
+    background-color: rgb(231, 231, 105);
+    border-radius: 30px;
+}
+
+#bleartramadani:hover {
+    background-color: yellow;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+
+}
+#education-list{
+    background-color: pink;
+    border-radius: 30px;
+ 
+}
+#education-list:hover{
+    background-color: rgb(229, 120, 139);
+}
+
+.education-nav{
+    background-color: white;
+  border-radius: 20px;
+}
+.education-nav li{
+    display: inline;
+}
+.li-nav{
+    color: gray;
+}
