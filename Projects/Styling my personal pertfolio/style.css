@@ -10,20 +10,27 @@ body {
 
 }
 
-#lista1 {
+#nav-list {
     text-align: center;
     list-style-type: none;
     padding: 0px;
+
     
 }
-
-#lista1 li{
-    display: inline;
-    background-color: aqua;
-    border-radius: 30px;
+a{
+text-decoration: none;
 }
-#lista1 li:hover{
-    background-color: rgb(85, 161, 161);
+
+#nav-list li{
+    display: inline;
+    background-color: burlywood;
+    border-radius: 30px;
+    padding: 15px;
+  cursor: inherit;
+}
+#nav-list li:hover{
+    background-color: rgb(225, 171, 99);
+    
 }
 
 h2 {
@@ -32,33 +39,56 @@ h2 {
 
 #bleartramadani {
     text-align: center;
-    background-color: rgb(231, 231, 105);
+    background-color: burlywood;
     border-radius: 30px;
+    padding: 15px;
+    margin: 15px;
+    
 }
 
 #bleartramadani:hover {
-    background-color: yellow;
+    background-color:rgb(225, 171, 99);
     border-color: black;
     border-width: 2px;
     border-style: solid;
 
 }
 #education-list{
-    background-color: pink;
+    background-color: burlywood;
     border-radius: 30px;
+    padding: 5px 15px 15px 15px;
+    margin: 15px;
+   
  
 }
-#education-list:hover{
-    background-color: rgb(229, 120, 139);
+#education-list li{
+padding: 15px 15px 15px 15px;
+
 }
 
-.education-nav{
+#education-list:hover{
+    background-color:rgb(225, 171, 99);
+}
+
+.education{
     background-color: white;
   border-radius: 20px;
+  padding: 10px 15px;
+
+
 }
-.education-nav li{
+.education li{
     display: inline;
+  
 }
-.li-nav{
-    color: gray;
+#projects{
+    background-color: burlywood;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 15px;
 }
+#projects :hover{
+    background-color:rgb(225, 171, 99) ;
+}
+
+
