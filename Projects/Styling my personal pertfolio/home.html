@@ -7,31 +7,33 @@
     <title>Home Page</title>
     <link rel="icon" type="image/x-icon" href="images/home.png">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
 </head>
 
 <body>
-    <header>
+    <header>\
         <hr>
-
         <h1 id="title"> Personal Portfolio</h1>
 
-        <nav>
-            <ul id="nav-list">
-                <li>
-                    <a href="My_Projects.html">My Projects &#128640;</a>
-                </li>
-                <li>|</li>
-                <li><a href="Contact_Me.html"> Conatct Me &#128153;</a></li>
+      
 
+        <nav>
+            <ul id="nav-bar">
+                <li>
+                    <a href="MyProjects.html">My Projects &#128640;</a> 
+                </li>
+           
+                <li>
+                    <a href="ContactMe.html"> Conatct Me &#128153;</a>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <hr>
+<hr>
 
     <main>
-        <section id="bleartramadani">
+        <section id="bleart">
             <h2>Who is Bleart Ramadani?</h2>
 
             <article>
@@ -47,33 +49,32 @@
             </article>
         </section>
 
-        <section id="education-list">
+        <section id="education">
             <h2>Education</h2>
 
-                <ul class="education">
-                    <li><em>Primary school</em>:<strong> Agim Ramadani</strong>(2013-2022) </li>
-                    <br>
-                    <br>
-                    <li><em>High school</em>:<strong>Gjimnazi i Shkencave Natyrore " Xhavit Ahmeti " Gjilan</strong> (2022-still)</li>
-                </ul>
-          
+            <ul id="education-ul">
+                <li>Primary School: <strong> Agim Ramadani</strong>(2013-2022)</li>
+           
+                <li>High Shool: <strong>Gjimnazi i Shkencave Natyrore " Xhavit Ahmeti " Gjilan</strong> (2022-still) </li>    
+            </ul>        
+
         </section>
 
         <section id="projects">
-            <h2 >My Projects</h2>
+            <h2>My Projects</h2>
             <article>
-                <ol>
-                    <li id="P1">My local buisness <a href="My_Projects.html#L1">Read More</a></li>
-                    <li id="P2">Favorite Celebrity <a href="My_Projects.html#L2">Read More</a></li>
-                    <li id="P3">Three simple tables <a href="My_Projects.html#L3">Read More</a></li>
+                <ol id="porjects-ol">
+                    <li id="P1">My local buisness <a href="MyProjects.html#L1" ><button class="a-button">-></button></a></li>
+                    <li id="P2">Favorite Celebrity <a href="MyProjects.html#L2" ><button class="a-button">-></button></a></li>
+                    <li id="P3">Three simple tables <a href="MyProjects.html#L3" ></a><button class="a-button">-></button></a></li>
                 </ol>
             </article>
         </section>
 
-        <section>
+        <section id="skills-table">
             <h2>My Skills</h2>
             <article>
-                <table border="1" width="50%">
+                <table width="50%" id="table">
                     <tr>
                         <th>#</th>
                         <th>English Language</th>
@@ -99,15 +100,15 @@
         <section>
             <article>
                 <form>
-                    <input type="BUTTON" value="Back to top of page" onclick="window.location.href='#top'">
+                    <input type="BUTTON" value="Back to top of page" onclick="window.location.href='#top'" id="Backtotopofthepage">
                 </form>
             </article>
         </section>
-
+        <hr>
     </main>
 
-    <footer>
-        <p>All righst reserved Bleart Ramadani ©</p>
+    <footer id="footer">
+        <p >All righst reserved Bleart Ramadani ©</p>
     </footer>
 </body>
 
