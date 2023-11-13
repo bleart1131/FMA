@@ -1,0 +1,80 @@
+.blog-container {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    border-radius: 1rem;
+}
+
+.left-side {
+    background-color: rgb(59, 59, 75);
+    color: white;
+    display: flex;
+    align-content: center;
+    text-align: end;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.left-side h3 {
+    color: rgb(189, 185, 185);
+}
+
+.left-side span {
+    background-color: rgb(59, 59, 75);
+    border: 2px solid rgb(189, 185, 185);
+    padding: auto;
+}
+
+.right-side {
+    padding: 0.8rem;
+}
+
+.right-side h5,
+hr {
+    color: grey;
+}
+
+.span {
+    background-color: rgb(77, 171, 77);
+    color: white;
+}
+
+.span2 {
+    background-color: blue;
+    color: white;
+}
+
+.name {
+    color: skyblue;
+}
+
+.intruduction {
+    color: grey;
+}
+
+.JavaScript {
+    background-color: red;
+    color: white;
+}
+
+img {
+    justify-content: space-between;
+    border-radius: 70rem;
+    width: 4rem;
+}
+
+.JohnDoe {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
