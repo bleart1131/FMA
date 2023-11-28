@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-color: rgb(64, 135, 64);
+
+}
+        img{
+            height: 300px;
+            width: 300px;
+            object-fit: cover;
+            border-radius: 50%;
+            cursor: pointer;
+            filter: blur(5px);
+            transition: filter 1.2s, rotate 1.2s , scale 1.2s  linear(0 0%, 0.16 35.78%, 0.57 50%, 0.53 78.43%, 0.88 98.04%) ;
+           transform-origin: 27% 56%;
+            
+          
+        }
+        img:hover{
+            filter: blur(0px);
+            rotate: 360deg;
+            scale: 1.2;
+        }
+
+    </style>
+</head>
+<body>
+    <img src="./phtoto/nature.jpg" alt="">
+</body>
+</html>

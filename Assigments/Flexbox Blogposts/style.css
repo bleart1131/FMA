@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     border: 2px solid black;
-    border-radius: 1rem;
+    
 }
 
 .left-side {
@@ -13,9 +13,9 @@
     text-align: end;
     justify-content: center;
     flex-direction: column;
-    border: 2px solid black;
-    border-radius: 1rem;
+    
     padding: 0.5rem;
+    height: 100vh;
 }
 
 .left-side h3 {
@@ -30,6 +30,7 @@
 
 .right-side {
     padding: 0.8rem;
+    overflow-y: scroll;
 }
 
 .right-side h5,

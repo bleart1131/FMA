@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODAY</title>
+    <style>
+        @keyframes show {
+            from{
+                opacity: 0;
+                transform: translateX(20px);
+            }
+
+            to{
+                opacity: 1;
+                transform: translateX(0px);
+            }
+        }
+        
+        *{
+            opacity: 0;
+            animation-name: show;
+            animation-duration: 1s;
+            animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation-fill-mode: forwards;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Im the title</h1>
+   
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorum assumenda aperiam enim laudantium et aut ab distinctio cupiditate veritatis voluptas ut officia, hic animi dignissimos corrupti iste eveniet obcaecati.</p>
+    <img src="./phtoto/nature.jpg" alt="">
+
+</body>
+</html>
