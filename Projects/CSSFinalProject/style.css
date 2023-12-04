@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-columns: auto  1fr;
+    margin: 0;
+    height: 100vh;
+
+}
+.aside{
+    display: flex;
+    color: white;
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+.asideDIV{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.sidebar{
+    background-color: rgb(0, 0, 0, 0.8);
+    background-blend-mode: color;
+    overflow-y: scroll;
+    padding: 1.1rem;
+    background-image: url(./photos/images/sidebar-1.jpg);
+    background-color: rgba(red, green, blue, alpha);
+    background-blend-mode:color;
+    
+    
+}
+.maincontent{
+    overflow-y: scroll;
+}
+
+
+.avatar{
+    width: 3rem;
+    border-radius: 40px;
+}
+.JohnDoe{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.drop-down{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 0.2rem;
+    padding: 0.3rem;
+}
+.shigjeta{
+    display: flex;
+    align-items: center;
+}
+.drop-down:hover{
+    background-color: rgb(182, 176, 176);
+}
+.DASHBOARD{
+    background-color: orangered;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    border-radius: 0.2rem;
+    padding: 0.3rem;
+}
+@media screen and (max-width: 1000px) {
+    .aside{
+        display: none;
+    }
+}
+.more{
+    display: flex;
+    flex-direction: row;
+ 
+
+}
+.point{
+    background-color: whitesmoke;
+    border-radius: 50rem;
+  
+  
+}
