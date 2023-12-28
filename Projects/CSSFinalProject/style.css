@@ -7,13 +7,18 @@ body{
     grid-template-columns: auto  1fr;
     margin: 0;
     height: 100vh;
-
+    font-family: roboto;
+    font-weight: 100;
+    box-sizing: border-box;
 }
 .aside{
     display: flex;
     color: white;
     grid-row: 1/2;
     grid-column: 1/2;
+    height: 100vh;
+   
+    
 }
 .asideDIV{
     display: flex;
@@ -28,11 +33,12 @@ body{
     background-image: url(./photos/images/sidebar-1.jpg);
     background-color: rgba(red, green, blue, alpha);
     background-blend-mode:color;
-    
+    height: 100vh;
     
 }
-.maincontent{
+.main{
     overflow-y: scroll;
+    height: 100vh;
 }
 
 
@@ -75,12 +81,10 @@ body{
 .more{
     display: flex;
     flex-direction: row;
+   align-items: center;
+   justify-content: center;
  
 
 }
-.point{
-    background-color: whitesmoke;
-    border-radius: 50rem;
-  
-  
-}
+
+
