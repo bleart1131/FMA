@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+        box-sizing: border-box;
+        background-color: black;
+        color: white;
+       
+        }
+
+        body {
+            height: 100vh;
+            margin: 0;
+            width: 100vw;
+            display: grid;
+            place-content: center;
+        }
+
+        #bigcontainer {
+            background-color: black;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            height: 5rem;
+            align-items: center;
+            justify-content: center;
+            width: max-content;
+            border-radius: 0.4rem;
+            padding: 2rem;
+            color: white;
+            border: 2px solid white;
+        }
+
+        #player1 {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+        }
+
+        #player2 {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+        }
+
+        #players {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .winner {
+            background-color: green;
+        }
+
+        .loser {
+            background-color: red;
+        }
+
+        .tie {
+            background-color: orange;
+        }
+     
+       
+    </style>
+</head>
+
+<body>
+    
+    <div id="bigcontainer">
+        <div id="answer">The correct answer is "7"</div>
+        <div id="players">
+            <div id="player1"> Player one: 6</div>
+            <div id="player2">Player two: 19</div>
+        </div>
+    </div>
+
+
+    <script>
+        let myNumber = Math.floor(Math.random() * 10) + 1;
+
+        let firstPlayer = parseInt(prompt(`Lojtari i par ju lutem shkruaj nje number prej 1 deri ne 10`));
+        let secondPlayer = parseInt(prompt(`Lojtari i dyte ju lutem shkruaj nje number prej 1 deri ne 10`));
+
+
+        let rezultati1 = Math.abs(firstPlayer - myNumber)
+        let rezultati2 = Math.abs(secondPlayer - myNumber)
+
+        let player1Wins = false
+        let barazim = false
+        if (rezultati1 < rezultati2) {
+            player1Wins = true
+        }
+        else if (firstPlayer === secondPlayer) {
+            barazim = true
+        }
+
+        let answerElement = document.getElementById(`answer`)
+        let player1Element = document.getElementById(`player1`)
+        let player2Element = document.getElementById(`player2`)
+        answerElement.textContent = `The correct answer is ${myNumber}`
+        player1Element.textContent = firstPlayer;
+        player2Element.textContent = secondPlayer;
+        if (barazim) {
+            player1Element.classList.add(`tie`)
+            player2Element.classList.add(`tie`)
+        }
+        else if (player1Wins) {
+            player1Element.classList.add(`winner`)
+            player2Element.classList.add(`loser`)
+        }
+        else {
+            player1Element.classList.add(`loser`)
+            player2Element.classList.add(`winner`)
+        }
+
+    </script>
+</body>
+
+</html>
